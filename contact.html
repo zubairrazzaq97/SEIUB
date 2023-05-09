@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Contact.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact_files/contact.css"> <title>contact</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="IUB ">
+                <p>IUB </p>
+            </span>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/Department%20of%20Software%20Engineering" target="_blank">HOME</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/about.html" target="_blank">ABOUT</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/services.html" target="_blank">SERVICE</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/contact.html" target="_blank">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid">
+        <div class="contain">
+            <h1>WELCOME!</h1>
+            <p>We’re a friendly bunch here at Place. Place an inquiry and we’ll get back to you the same day.</p>
+        </div>
+        <div class="contain">
+            <form action="http://127.0.0.1:5500/action_page.php">
+                <label for="fname">Name*</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Your Name"><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="fname" name="lname" placeholder="Your last Name"><br><br>
+                <label for="mail">Email*</label><br>
+                <input type="text" id="fname" placeholder="Your Email"><br>
+                <label for="Message">Message*</label><br>
+                <textarea data-v-3a756488="" id="message" placeholder="Enter your message" type="text" class=""></textarea><br>
+                <input type="submit" id="B1" value="Send Message">
+            </form> 
+            </div>
+
+            </div>
+    </main>
+    <footer>
+        <div class="last">
+            <div class="info">
+                <h3>ZUBAIR RAZZAQ</h3>
+                <p>
+                    © 2021 SE.IUB. All rights reserved.
+                </p>
+            </div>
+            <div class="info">
+                <h3>Contacts</h3>
+                <p>
+                    <a href="http://127.0.0.1:5500/info@iub.edu.pk"> info@iub.edu.pk</a> <br>
+                    062-9250235
+                </p>
+            </div>
+        </div>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
